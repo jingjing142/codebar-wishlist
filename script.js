@@ -35,7 +35,7 @@ $(document).on('click', '.pending', function() {
     span.appendChild(spanContent);
 
     li_node.append(span);
-    $('.pending').remove();
+    $(this).remove();
 
     li_node.addClass('completed');
     updateTotal();
